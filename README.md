@@ -9,6 +9,7 @@ More comments about low-level details are in **breakHash.c**.
 
 To edit some parameters you need to edit the source code and recompile it first. Specification was to find 40bit collision, but because that was too easy for this implementation so I increased difficulty to 48 and 56bits.
 
+The 56 bit run requires 3GB of ram, I wouldn't not recommend go further than that, but the technical limit is 64bit because I modified the sha256.c and made it a bit faster by only handling last 64bit of the hash.
 
 48-bit collision run
 --------------------
